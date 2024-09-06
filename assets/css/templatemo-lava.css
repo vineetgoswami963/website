@@ -5,7 +5,7 @@
 reset
 --------------------------------------------- 
 */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div
+html, body, div, span, applet, object, iframe, h1, h2, h3, h5, h6, p, blockquote, div
 pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q,
 s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
 figure, header, nav, section, article, aside, footer, figcaption {
@@ -42,7 +42,7 @@ ul, li {
   list-style: none;
 }
 
-header, nav, section, article, aside, footer, hgroup {
+header, nav, section, article, aside, hgroup {
   display: block;
 }
 
@@ -50,15 +50,7 @@ header, nav, section, article, aside, footer, hgroup {
   box-sizing: border-box;
 }
 
-html, body {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  background-color: #fff;
-  font-size: 16px;
-  -ms-text-size-adjust: 100%;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+
 
 a {
   text-decoration: none !important;
@@ -73,11 +65,7 @@ ul {
   margin-bottom: 0px;
 }
 
-p {
-  font-size: 15px;
-  line-height: 25px;
-  color: #888;
-}
+
 
 /* 
 ---------------------------------------------
@@ -722,14 +710,24 @@ about
 
 .container3{
   padding-top: 30px;
+  align-items: center;
 }
 #secondcol{
   padding-top: 120px;
 }
 .heading{
+  text-align: center;
   margin-top: -60px;
   margin-bottom: 100px;
-  padding-bottom: 60px;
+  padding-bottom: 80px;
+
+  font-family: 'Arial', 'Helvetica', sans-serif; 
+  font-weight: bold;  
+  color: black;  
+  font-size: 36px;  
+  text-align: center;  
+  position: relative;  
+  animation: pop-in 0.5s ease-in-out;
 }
 #fa2{
   width: 400px;
@@ -755,7 +753,6 @@ about
 .features-item h4 {
   margin-top: 0px;
   font-size: 22px;
-  color: #1e1e1e;
   margin-bottom: 25px;
 }
 
@@ -811,7 +808,7 @@ promotion
 
 #promotion .right-text h4 {
   font-size: 22px;
-  color: #1e1e1e;
+  color: #343A46;
   margin-bottom: 15px;
   margin-top: 3px;
 }
@@ -949,11 +946,8 @@ footer
 }
 
 footer {
-  margin-top: 200px;
-  padding-top: 120px;
-  background-image: url(../images/footer-bg.png);
-  background-repeat: no-repeat;
-  background-position: center center;
+  
+ 
   background-size: cover;
   width: 100%;
 }
@@ -1095,22 +1089,18 @@ footer .copyright {
 }
 
 footer .sub-footer {
-  padding: 60px 0px;
-  border-top: 1px solid rgba(250,250,250,0.3);
   text-align: center;
 }
 
-footer .sub-footer a {
-	color: #FFF;
-}
+
 
 footer .sub-footer a:hover {
 	color: #FC3;
 }
 
 footer .sub-footer p {
-  color: #fff;
-  font-size: 15px;
+  /* color: #fff; */
+  font-size: 1px;
   font-weight: 300;
   letter-spacing: 0.5px;
 }
@@ -1209,9 +1199,9 @@ preloader
 }
 
 
-section {
+section,footer {
   
-  background: linear-gradient(to bottom, #ff512f, #f09819); }
+  background: linear-gradient(to bottom, #f09819, #F97407); }
 .logo_image{
   width: 15%;
   height: auto;
@@ -1290,4 +1280,20 @@ section {
       margin-bottom: 0px;
       padding-bottom: 30px;
     }
+  }
+  html, body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    background-color: #fff;
+    font-size: 16px;
+    -ms-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  p{
+    color: white;
+  }
+  h4{
+    font-weight: bold;
+    color: #343A46;
   }
