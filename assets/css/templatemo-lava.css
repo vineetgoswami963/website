@@ -707,7 +707,10 @@ about
   text-align: center;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
 }
-
+.image{
+  width: 100px;
+  height: 100px;
+}
 .container3{
   padding-top: 30px;
   align-items: center;
