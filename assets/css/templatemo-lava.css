@@ -609,15 +609,17 @@ welcome
   margin-top: 35%;
   transform: perspective(1px) translateY(-30%) !important;
   gap: 0px;
+  
 }
 
 .welcome-area .header-text h1 {
   font-weight: 900;
-  font-size: 52px;
+  font-size: 40px;
   line-height: 80px;
   letter-spacing: 1px;
   margin-bottom: 30px;
   color: #191a20;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
 }
 
 .welcome-area .header-text h1 em {
@@ -795,7 +797,7 @@ promotion
 }
 
 #promotion .right-text ul li {
-  display: inline-block;
+  display: flex;
   margin-bottom: 60px;
 }
 
@@ -1208,11 +1210,13 @@ section,footer {
 .logo_image{
   width: 15%;
   height: auto;
+  margin-top: -15px;
 }
 .logo_image2{
   margin-top: -20px;
-  padding-bottom: 30px;
-  width: 40%;
+  padding-bottom: 40px;
+  margin-left: 70px;
+  width: 50%;
   height: auto;
 }
   @media (max-width: 500px) {
@@ -1220,15 +1224,15 @@ section,footer {
     .download_button{
       width: 40%;
       height: auto;
+      padding-left: 20px;
     }
     .logo_image{
-      padding-right: 20px;
+      padding-left: 0px;
       width: 40%;
-      height: auto;
-
+      height: auto;   
+      margin-left: -40px;
     }
     .logo_image2{
-
       width: 60%;
       height: auto;
     }
@@ -1278,12 +1282,24 @@ section,footer {
     }
     .features-icon img {
         margin-top: 0; /* Remove or reduce negative margin on mobile */
+
     }
     .heading{
       margin-top: -80px;
       margin-bottom: 0px;
       padding-bottom: 30px;
     }
+    .welcome-area .header-text h1 {
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 40px;
+  letter-spacing: 0px;
+  margin-bottom: 30px;
+  color: #191a20;
+  padding-top: 30px;
+ padding-left: 35px;
+
+}
   }
   html, body {
     font-family: 'Poppins', sans-serif;
@@ -1301,3 +1317,65 @@ section,footer {
     font-weight: bold;
     color: #343A46;
   }
+
+  @media (max-width: 500px) {
+.logo_image2{
+      margin-left:60px;
+      width: 60%;
+      height: auto;
+    }
+    .welcome-area .header-text .left-text {
+      width: 110%;
+    margin-top: 5%;
+    transform: none !important;
+padding-left: 20px;
+  }
+  .center-heading {
+    margin-top: -30px;
+    margin-bottom: 10px;
+  }
+  }
+
+  .feature-image{
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
+  }
+
+  /* Flexbox layout for equal height columns */
+#about .container3 .row2 {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#about .container3 .col-lg-4, 
+#about .container3 .col-md-6, 
+#about .container3 .col-sm-12 {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch; /* Ensure that items stretch to fill the height */
+  margin-bottom: 60px;
+
+}
+
+#about .container3 .features-item {
+  flex: 1; 
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow to give a card look */
+}
+
+.features-icon img {
+  margin-top: 0;  
+  max-width: 80%; 
+}
+
+@media (max-width: 768px) {
+  #about .container3 .row2 {
+      flex-direction: column;
+  }
+
+  #about .container3 .col-lg-4 {
+      margin-bottom: 30px;
+  }
+}
