@@ -1298,6 +1298,7 @@ section,footer {
   color: #191a20;
   padding-top: 30px;
  padding-left: 35px;
+ /* font-family: italic; */
 
 }
   }
@@ -1378,4 +1379,9 @@ padding-left: 20px;
   #about .container3 .col-lg-4 {
       margin-bottom: 30px;
   }
+}
+
+
+body{
+  font-style: italic;
 }
