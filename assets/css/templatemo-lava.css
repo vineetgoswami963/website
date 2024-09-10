@@ -1297,8 +1297,7 @@ section,footer {
   margin-bottom: 30px;
   color: #191a20;
   padding-top: 30px;
- padding-left: 35px;
- /* font-family: italic; */
+ padding-left: 40px;
 
 }
   }
@@ -1321,7 +1320,7 @@ section,footer {
 
   @media (max-width: 500px) {
 .logo_image2{
-      margin-left:60px;
+      margin-left:65px;
       width: 60%;
       height: auto;
     }
@@ -1380,8 +1379,6 @@ padding-left: 20px;
       margin-bottom: 30px;
   }
 }
-
-
 body{
   font-style: italic;
 }
