@@ -789,7 +789,7 @@ promotion
 }
 
   .promotion {
-  padding: 20px 0px;
+  padding: 80px;
   z-index: 1;
 }
 
@@ -1428,6 +1428,11 @@ padding-left: 20px;
     margin: 1px 0; /* Reduced space between rows on mobile */
   }
   .promotion{
+  padding-top: 0px;
+  }
+}
+@media (max-width: 1440px) {
+.promotion{
   padding-top: 0px;
   }
 }
