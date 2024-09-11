@@ -187,15 +187,17 @@ header
 
 .background-header .logo,
 .background-header .main-nav .nav li a {
-  color: #1e1e1e!important;
+  color: black !important;
 }
 
 .background-header .main-nav .nav li:hover a {
   color: #fba70b!important;
+  font-size: 20px;
 }
 
 .background-header .nav li a.active {
   color: #fba70b!important;
+  font-size: 20px;
 }
 
 .header-area {
@@ -259,7 +261,7 @@ header
   display: block;
   font-weight: 500;
   font-size: 13px;
-  color: #7a7a7a;
+  color: black;
   text-transform: uppercase;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
@@ -273,6 +275,7 @@ header
 
 .header-area .main-nav .nav li:hover a {
   color: #fba70b;
+  font-size: 20px;
 }
 
 .header-area .main-nav .nav li.submenu {
@@ -480,6 +483,7 @@ header
 
 .header-area.header-sticky .nav li a.active {
   color: #fba70b;
+  font-size: 20px;
 }
 
 @media (max-width: 1200px) {
@@ -579,6 +583,7 @@ header
   }
   .header-area .main-nav .nav li.submenu:hover ul, .header-area .main-nav .nav li.submenu:focus ul {
     height: 0px;
+    color: #191a20;
   }
 }
 
@@ -606,7 +611,7 @@ welcome
 .welcome-area .header-text .left-text {
   position: relative;
   align-self: center;
-  margin-top: 35%;
+  margin-top: 30%;
   transform: perspective(1px) translateY(-30%) !important;
   gap: 0px;
   
@@ -783,35 +788,58 @@ promotion
   margin-top: -200px;
 }
 
-#promotion {
-  padding: 100px 0px;
+  .promotion {
+  padding: 20px 0px;
+  z-index: 1;
 }
 
-#promotion .left-image {
+.promotion .left-image {
   align-self: center;
 }
 
-#promotion .right-text ul {
+.promotion .right-text ul {
   padding: 0;
   margin: 0;
 }
 
-#promotion .right-text ul li {
+.promotion .right-text ul li {
   display: flex;
   margin-bottom: 60px;
+ 
 }
 
-#promotion .right-text ul li:last-child {
+.promotion .right-text ul li:last-child {
   margin-bottom: 0px;
+
+}
+.promotion .right-text ul li h2{
+  color: #f06806;
+
 }
 
-#promotion .right-text img {
+.promotion .right-text img {
   display: inline-block;
   float: left;
-  margin-right: 30px;
+  /* margin-right: 30px; */
 }
 
-#promotion .right-text h4 {
+.promotion ul li a {
+  position: relative; /* Ensure other content layers are positioned */
+  z-index: 1;
+  width: 100px; /* Set an initial width */
+  transition: transform 0.6s ease;
+}
+
+.promotion ul li a:hover {
+  transform: scale(1.4);
+}
+
+.promotion ul li p {
+  font-size: 20px;
+  color: #808080;
+}
+
+.promotion .right-text h4 {
   font-size: 22px;
   color: #343A46;
   margin-bottom: 15px;
@@ -831,8 +859,9 @@ testimonials
   position: absolute;
   width: 100%;
   display: inline-block;
-  height: 110%;
-  margin-top: -200px;
+  height: 60%;
+  margin-top: -500px;
+  z-index: 0;
 }
 
 #testimonials {
@@ -846,7 +875,7 @@ testimonials
 }
 
 #testimonials .item .testimonial-content {
-  background: rgb(244,129,63);
+ 
   background: linear-gradient(145deg, rgba(244,129,63,1) 0%, rgba(241,85,106,1) 100%);
   margin-left: 60px;
   padding: 40px 30px;
@@ -869,6 +898,7 @@ testimonials
   margin-top: 20px;
   color: #fff;
 }
+
 
 #testimonials .item .testimonial-content p {
   color: #fff;
@@ -900,8 +930,6 @@ testimonials
   line-height: 80px;
   text-align: center;
   display: inline-block;
-  background: rgb(244,129,63);
-  background: linear-gradient(145deg, rgba(244,129,63,1) 0%, rgba(241,85,106,1) 100%);
   position: absolute;
 }
 
@@ -955,6 +983,7 @@ footer {
  
   background-size: cover;
   width: 100%;
+  
 }
 
 footer .footer-content {
@@ -1015,109 +1044,6 @@ footer .right-content {
   color: #7a7a7a;
 }
 
-.footer-content .right-content {
-  color: #fff;
-}
-
-.footer-content .right-content h2 {
-  margin-top: 0px;
-  margin-bottom: 30px;
-  font-size: 42px;
-  text-transform: capitalize;
-  font-weight: 700;
-  letter-spacing: 1px;
-  color: #ffffff;
-}
-
-.footer-content .right-content h2 em {
-  font-style: normal;
-  color: #31302ddc;
-}
-
-.footer-content .right-content p {
-  color: #FFF;
-}
-
-.footer-content .right-content a {
-  color: #FFF;
-}
-
-.footer-content .right-content a:hover {
-  color: #FC3;
-}
-
-footer .social {
-  overflow: hidden;
-  margin-top: 30px;
-
-}
-
-footer .social li:first-child {
-  margin-left: 0px;
-}
-
-footer .social li {
-  margin: 0px 7.5px;
-  display: inline-block;
-}
-
-footer .social li a {
-  color: #fff;
-  text-align: center;
-  background-color: transparent;
-  border: 1px solid #fff;
-  width: 44px;
-  height: 44px;
-  line-height: 44px;
-  border-radius: 50%;
-  display: inline-block;
-  font-size: 16px;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-footer .social li a:hover {
-  background-color: #fba70b;
-  border-color: #fba70b;
-  color: #fff;
-}
-
-footer .copyright {
-  margin-top: 10px;
-  font-weight: 400;
-  font-size: 15px;
-  color: #4a4a4a;
-  letter-spacing: 0.88px;
-  text-transform: capitalize;
-}
-
-footer .sub-footer {
-  text-align: center;
-}
-
-
-
-footer .sub-footer a:hover {
-	color: #FC3;
-}
-
-footer .sub-footer p {
-  /* color: #fff; */
-  font-size: 1px;
-  font-weight: 300;
-  letter-spacing: 0.5px;
-}
-
-@media (max-width: 991px) {
-  footer .copyright {
-    text-align: center;
-  }
-  footer .social {
-    text-align: center;
-  }
-}
 
 /* 
 ---------------------------------------------
@@ -1204,9 +1130,7 @@ preloader
 }
 
 
-section,footer {
-  
-  background: linear-gradient(to bottom, #f09819, #F97407); }
+
 .logo_image{
   width: 15%;
   height: auto;
@@ -1219,6 +1143,7 @@ section,footer {
   width: 50%;
   height: auto;
 }
+
   @media (max-width: 500px) {
     
     .download_button{
@@ -1248,13 +1173,13 @@ section,footer {
   text-align: center;
   font-size: 42px;
   font-weight: 700;
-  color: #f0f1ea;
+  color: black;
   margin-bottom: 25px;
 }
 
 .center-heading h2 em {
   font-style: normal;
-  color: #3a382c;
+  color: #f06806;
 }
 
 
@@ -1296,7 +1221,7 @@ section,footer {
   letter-spacing: 0px;
   margin-bottom: 30px;
   color: #191a20;
-  padding-top: 30px;
+  padding-top: 60px;
  padding-left: 40px;
 
 }
@@ -1342,6 +1267,8 @@ padding-left: 20px;
     height: 100px;
   }
 
+
+
   /* Flexbox layout for equal height columns */
 #about .container3 .row2 {
   margin-top: 40px;
@@ -1379,6 +1306,130 @@ padding-left: 20px;
       margin-bottom: 30px;
   }
 }
-body{
+/* body{
   font-style: italic;
+} */
+.uf-contact-form-01 {
+  max-width: 900px;
 }
+@media (min-width: 576px){
+   .uf-contact-form-01 {
+  min-height: 100vh;
+  align-content: center;
+} 
+}
+.uf-img-contact-form-01{
+    max-width: 100%;
+    animation: uf-animation 4s ease-in-out 1s infinite alternate;
+    position: relative;
+}
+.uf-ct-01-text-primary{
+    color: #864ef2;
+}
+.uf-ct-01-btn-primary{
+    background-color: #864ef2;
+    color: #fff;
+}
+.uf-ct-01-btn-primary:hover{
+    background-color: #641eec;
+    color: #fff;
+}
+
+@keyframes uf-animation {
+0%   {top:0px;}
+50%  {top:-30px;}
+100% {top:0px;}
+}
+.form-control:focus {
+  border-color: #a979ff;
+  box-shadow: 0 0 0 .25rem rgb(103 58 183 / 21%);
+}
+#background{
+  background-image: linear-gradient(45deg, #864ef2, #6755F4);
+
+}
+
+
+
+
+
+
+.footer {
+  background: #000;
+  padding: 1px 0; /* Reduced padding to minimize height */
+  font-family: 'Play', sans-serif;
+  text-align: center;
+  color: gray;
+
+}
+
+.footer .row {
+  width: 100%;
+  margin: 0.5% 0; /* Reduced margin between rows */
+  /* padding: 0.3% 0; */
+  font-size: 0.8em;
+  display: flex;
+  justify-content: center; /* Centers the content horizontally */
+  align-items: center; /* Centers content vertically */
+  flex-wrap: wrap; /* Ensures items wrap on smaller screens */
+}
+
+.footer .row a {
+  text-decoration: none;
+  color: gray;
+  transition: 0.5s;
+}
+
+.footer .row a:hover {
+  color: #fff;
+}
+
+.footer .row ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer .row ul li {
+  display: inline-block;
+  margin: 0 10px; /* Reduced margin between list items */
+}
+
+.footer .row a i {
+  font-size: 1.8em; /* Slightly increased icon size for better visibility */
+  margin: 0 10px; /* Increased spacing between icons */
+}
+
+.footer .row p { 
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+}
+
+/* Media query for smaller screens (phones) */
+@media (max-width: 720px) {
+  .footer {
+    text-align: center;
+    padding: 1px 0; /* Adjusted padding for mobile */
+  }
+
+  .footer .row ul li {
+    display: inline-block; /* Ensures horizontal layout on mobile */
+    margin: 5px 5px; /* Reduced spacing between list items on mobile */
+  }
+
+  .footer .row a i {
+    margin: 0 10px; /* Reduced spacing between icons on mobile */
+  }
+
+  .footer .row {
+    flex-direction: row; /* Keeps icons horizontal on mobile */
+    margin: 1px 0; /* Reduced space between rows on mobile */
+  }
+  .promotion{
+  padding-top: 0px;
+  }
+}
+
+ 
